@@ -4,6 +4,8 @@
 
 TriagePack is a zero-dependency CLI that lets open-source maintainers define a small diagnostic recipe. Contributors run one command and get a structured Markdown report with environment details, reproduction steps, command output, and automatic secret redaction.
 
+![TriagePack demo: review commands, collect diagnostics, and redact secrets](assets/demo.gif)
+
 ```text
 $ npx triagepack collect
 This trusted configuration requests the following commands:

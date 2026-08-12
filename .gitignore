@@ -5,3 +5,4 @@ examples/report.json
 *.tgz
 .DS_Store
 .verify-install/
+__pycache__/
