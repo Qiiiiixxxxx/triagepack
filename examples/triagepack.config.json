@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "project": "Acme CLI",
+  "issueUrl": "https://github.com/acme/cli/issues/new",
+  "prompts": [
+    { "id": "summary", "label": "What happened?", "required": true },
+    { "id": "steps", "label": "Steps to reproduce", "required": true }
+  ],
+  "commands": [
+    { "name": "Node.js", "command": "node", "args": ["--version"], "timeoutMs": 5000 },
+    { "name": "Git", "command": "git", "args": ["--version"], "timeoutMs": 5000 }
+  ]
+}

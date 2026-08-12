@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "project": "TriagePack",
+  "issueUrl": "https://github.com/Qiiiiixxxxx/triagepack/issues/new?template=bug.yml",
+  "prompts": [
+    { "id": "summary", "label": "What happened?", "required": true },
+    { "id": "steps", "label": "Steps to reproduce", "required": true },
+    { "id": "expected", "label": "What did you expect?", "required": true }
+  ],
+  "commands": [
+    { "name": "TriagePack", "command": "node", "args": ["bin/triagepack.js", "--version"], "timeoutMs": 5000 },
+    { "name": "Node.js", "command": "node", "args": ["--version"], "timeoutMs": 5000 },
+    { "name": "Git", "command": "git", "args": ["--version"], "timeoutMs": 5000 }
+  ]
+}

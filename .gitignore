@@ -1,0 +1,6 @@
+node_modules/
+triagepack-report.md
+triagepack-report.json
+examples/report.json
+*.tgz
+.DS_Store

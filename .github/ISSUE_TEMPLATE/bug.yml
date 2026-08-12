@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug]: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve TriagePack. Run `npx triagepack collect`, review the generated file, and paste it below.
+  - type: textarea
+    id: report
+    attributes:
+      label: TriagePack report
+      description: Review the report before posting. Never share secrets.
+      placeholder: Paste triagepack-report.md here
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I reviewed the report and confirmed it contains no private information.
+          required: true

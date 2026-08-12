@@ -1,0 +1,52 @@
+{
+  "name": "triagepack",
+  "version": "0.1.0",
+  "description": "Generate safe, redacted, maintainer-ready diagnostic reports for GitHub issues.",
+  "type": "module",
+  "bin": {
+    "triagepack": "./bin/triagepack.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./redact": "./src/redact.js"
+  },
+  "scripts": {
+    "check": "node --check bin/triagepack.js && node --test",
+    "test": "node --test",
+    "demo": "node bin/triagepack.js collect --config examples/triagepack.config.json --yes --output examples/REPORT.example.md",
+    "prepack": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "bug-report",
+    "diagnostics",
+    "github-issues",
+    "maintainers",
+    "redaction",
+    "support-bundle",
+    "triage"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin",
+    "src",
+    "docs/configuration.md",
+    "README.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qiiiiixxxxx/triagepack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qiiiiixxxxx/triagepack/issues"
+  },
+  "homepage": "https://github.com/Qiiiiixxxxx/triagepack#readme"
+}
