@@ -4,3 +4,4 @@ triagepack-report.json
 examples/report.json
 *.tgz
 .DS_Store
+.verify-install/
