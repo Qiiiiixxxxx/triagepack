@@ -2,6 +2,10 @@
 
 **Turn “it broke” into a safe, actionable GitHub issue.**
 
+[![CI](https://github.com/Qiiiiixxxxx/triagepack/actions/workflows/ci.yml/badge.svg)](https://github.com/Qiiiiixxxxx/triagepack/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/triagepack)](https://www.npmjs.com/package/triagepack)
+[![license](https://img.shields.io/npm/l/triagepack)](LICENSE)
+
 TriagePack is a zero-dependency CLI that lets open-source maintainers define a small diagnostic recipe. Contributors run one command and get a structured Markdown report with environment details, reproduction steps, command output, and automatic secret redaction.
 
 ![TriagePack demo: review commands, collect diagnostics, and redact secrets](assets/demo.gif)
@@ -109,5 +113,7 @@ See [SECURITY.md](SECURITY.md) for reporting vulnerabilities and [docs/configura
 ## Contributing
 
 Small, test-backed pull requests are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md), or open an issue describing the maintainer workflow you want to improve.
+
+If you maintain an open-source project, join the [diagnostics feedback discussion](https://github.com/Qiiiiixxxxx/triagepack/discussions/4) and share the one command or environment detail you repeatedly ask bug reporters to provide.
 
 MIT © TriagePack contributors
