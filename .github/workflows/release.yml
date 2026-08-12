@@ -19,7 +19,16 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: npm ci
       - run: npm run check
-      - run: npm publish --provenance --access public
+      - name: Publish package when this version is new
+        shell: bash
+        run: |
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version >/dev/null 2>&1; then
+            echo "$PACKAGE_NAME@$PACKAGE_VERSION is already published; skipping npm publish."
+          else
+            npm publish --provenance --access public
+          fi
       - uses: softprops/action-gh-release@v2
         with:
           generate_release_notes: true
